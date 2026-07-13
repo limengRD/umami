@@ -4,11 +4,11 @@ import { httpGet } from '@/lib/fetch';
 import { getDateLocale, getTextDirection } from '@/lib/lang';
 import { setItem } from '@/lib/storage';
 import { setLocale, useApp } from '@/store/app';
-import enUS from '../../../public/intl/messages/en-US.json';
+import zhCN from '../../../public/intl/messages/zh-CN.json';
 import { useForceUpdate } from './useForceUpdate';
 
 const messages = {
-  'en-US': enUS,
+  'zh-CN': zhCN,
 };
 
 const selector = (state: { locale: string }) => state.locale;
